@@ -1,4 +1,4 @@
-{% set version = '2.2' %}
+{% set version = "2.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/alphahull_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/alphahull/alphahull_{{ version }}.tar.gz
-  sha256: fbef906abae5e0ffd5e681ff75c9a1e0f829a73bf0f13fd0755eab9b3e388d08
+  sha256: 49bc188d917c7ffb82834ecb0cd7db064e6b3ad20ed879081d6b36ff5632396e
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -57,12 +57,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=alphahull
   license: LicenseRef-ACM
-  summary: Computation of the alpha-shape and alpha-convex hull of a given sample of points in
-    the plane. The concepts of alpha-shape and alpha-convex hull generalize the definition
-    of the convex hull of a finite set of points. The programming is based on the duality
-    between the Voronoi diagram and Delaunay triangulation. The package also includes
-    a function that returns the Delaunay mesh of a given sample of points and its dual
-    Voronoi diagram in one single object.
+  summary: Computation of the alpha-shape and alpha-convex hull of a given sample of points in the plane. The concepts of alpha-shape and alpha-convex hull generalize the definition of the convex hull of a finite set of points. The programming is based on the duality between the Voronoi diagram and Delaunay triangulation.
+    The package also includes a function that returns the Delaunay mesh of a given sample of points and its dual Voronoi diagram in one single object.
   license_family: OTHER
   license_file:
     - LICENSE
