@@ -1,4 +1,4 @@
-{% set version = "2.3" %}
+{% set version = "2.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/alphahull_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/alphahull/alphahull_{{ version }}.tar.gz
-  sha256: 49bc188d917c7ffb82834ecb0cd7db064e6b3ad20ed879081d6b36ff5632396e
+  sha256: f2336677e79ae325292f0145804afe818e651d98ff0f8b4f01b193b13eb8f1ce
 
 build:
   merge_build_host: true  # [win]
