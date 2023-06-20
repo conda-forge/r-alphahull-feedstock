@@ -1,11 +1,11 @@
-About r-alphahull
-=================
+About r-alphahull-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-alphahull-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=alphahull
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-alphahull-feedstock/blob/main/LICENSE.txt)
 
 Summary: Computation of the alpha-shape and alpha-convex hull of a given sample of points in the plane. The concepts of alpha-shape and alpha-convex hull generalize the definition of the convex hull of a finite set of points. The programming is based on the duality between the Voronoi diagram and Delaunay triangulation. The package also includes a function that returns the Delaunay mesh of a given sample of points and its dual Voronoi diagram in one single object.
 
